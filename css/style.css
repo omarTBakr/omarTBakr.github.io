@@ -204,6 +204,9 @@ a:hover { text-decoration: underline; }
 .btn-primary { background: var(--ink); color: var(--bg); }
 .btn-primary:hover { background: transparent; color: var(--ink); }
 
+.btn-outline { color: var(--ink); }
+.btn-outline:hover { background: var(--ink); color: var(--bg); }
+
 /* ==========================================================================
    STATS — big numbers that count up
    ========================================================================== */
