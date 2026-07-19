@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-linecap="round">
+  <!-- court in perspective -->
+  <path d="M60 195 L140 105 L260 105 L340 195 Z"/>
+  <path d="M100 150 L300 150" stroke-dasharray="6 6" opacity="0.6"/>
+  <!-- net -->
+  <path d="M195 60 L195 105 M205 60 L205 105"/>
+  <path d="M160 62 L240 62 M160 74 L240 74 M160 86 L240 86"/>
+  <path d="M160 62 L160 90 M180 62 L180 96 M220 62 L220 96 M240 62 L240 90" opacity="0.7"/>
+  <!-- ball with seams -->
+  <circle cx="305" cy="55" r="26"/>
+  <path d="M282 43 Q305 58 328 43 M293 78 Q297 55 285 38 M317 78 Q313 55 325 38"/>
+  <!-- motion arc -->
+  <path d="M120 40 Q200 5 272 38" stroke-dasharray="4 8" opacity="0.7"/>
+  <!-- players (simple figures) -->
+  <circle cx="120" cy="128" r="8"/>
+  <path d="M120 136 L120 158 M120 142 L106 150 M120 142 L134 136 M120 158 L110 176 M120 158 L130 176"/>
+  <circle cx="285" cy="128" r="8"/>
+  <path d="M285 136 L285 158 M285 142 L299 134 M285 142 L271 148 M285 158 L275 176 M285 158 L295 176"/>
+</svg>

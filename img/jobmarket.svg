@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-linecap="round">
+  <!-- axes -->
+  <path d="M60 30 L60 185 L350 185"/>
+  <!-- bars -->
+  <rect x="85" y="130" width="34" height="55" rx="4"/>
+  <rect x="140" y="105" width="34" height="80" rx="4"/>
+  <rect x="195" y="120" width="34" height="65" rx="4"/>
+  <rect x="250" y="70" width="34" height="115" rx="4"/>
+  <!-- trend line with arrow -->
+  <path d="M90 118 L150 90 L210 102 L290 48" stroke-dasharray="6 6" opacity="0.8"/>
+  <path d="M290 48 L276 48 M290 48 L290 62" opacity="0.8"/>
+  <!-- database cylinder -->
+  <ellipse cx="330" cy="120" rx="26" ry="10"/>
+  <path d="M304 120 L304 160 Q304 170 330 170 Q356 170 356 160 L356 120"/>
+  <path d="M304 140 Q304 150 330 150 Q356 150 356 140" opacity="0.7"/>
+  <!-- magnifying glass -->
+  <circle cx="150" cy="45" r="20"/>
+  <path d="M165 60 L182 77" stroke-width="4"/>
+</svg>

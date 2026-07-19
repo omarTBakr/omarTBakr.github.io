@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-linecap="round">
+  <!-- skyline -->
+  <path d="M30 130 L30 50 L80 50 L80 130" opacity="0.6"/>
+  <path d="M95 130 L95 25 L150 25 L150 130" opacity="0.6"/>
+  <path d="M165 130 L165 65 L215 65 L215 130" opacity="0.6"/>
+  <path d="M40 65 h8 M60 65 h8 M40 85 h8 M60 85 h8 M105 40 h8 M128 40 h8 M105 60 h8 M128 60 h8 M105 80 h8 M128 80 h8 M175 80 h8 M196 80 h8" opacity="0.5"/>
+  <!-- taxi -->
+  <path d="M240 165 Q240 140 265 138 L285 118 Q290 112 300 112 L330 112 Q340 112 345 120 L358 138 Q375 142 375 158 L375 165 Q375 172 368 172 L247 172 Q240 172 240 165 Z"/>
+  <path d="M292 118 L282 138 L322 138 L322 118 Z" opacity="0.8"/>
+  <!-- roof sign -->
+  <rect x="298" y="98" width="26" height="13" rx="3"/>
+  <!-- wheels -->
+  <circle cx="265" cy="172" r="12"/>
+  <circle cx="348" cy="172" r="12"/>
+  <!-- checker strip -->
+  <path d="M248 152 h10 M268 152 h10 M288 152 h10 M308 152 h10 M328 152 h10 M348 152 h10" stroke-width="5"/>
+  <!-- road -->
+  <path d="M25 200 L375 200"/>
+  <path d="M45 200 h24 M105 200 h24 M165 200 h24" stroke-dasharray="20 30" opacity="0.6"/>
+  <!-- route pin + clock (trip duration) -->
+  <circle cx="70" cy="165" r="14"/>
+  <path d="M70 158 L70 165 L76 169"/>
+</svg>

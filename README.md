@@ -48,10 +48,22 @@ git push
 
 Wait ~1 minute, then refresh https://omartbakr.github.io
 
-### Change the color theme
+### Change the theme
 
-Open `css/style.css` and edit the variables at the very top (`:root` block).
-Changing `--accent` alone gives the site a completely different personality.
+The site is black & white with a dark/light toggle (the ◐ button). Both
+themes are defined as variable blocks at the top of `css/style.css`
+(`:root` = dark, `[data-theme="light"]` = light).
+
+### Update the LeetCode / Codeforces numbers
+
+Open `index.html`, find the `id="stats"` section, and change the
+`data-count="..."` values. (Current numbers were fetched 2026-07-19:
+LeetCode 509 solved, Codeforces 82.)
+
+### Replace a project illustration with a real screenshot
+
+Drop the screenshot into `img/`, then in `js/main.js` change that
+project's `image:` path from the `.svg` to your new file.
 
 ### Update your about text / skills
 

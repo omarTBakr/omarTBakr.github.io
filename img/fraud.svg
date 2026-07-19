@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-linecap="round">
+  <!-- credit card -->
+  <rect x="45" y="55" width="190" height="120" rx="12"/>
+  <path d="M45 85 L235 85" stroke-width="10"/>
+  <rect x="65" y="105" width="34" height="26" rx="5"/>
+  <path d="M65 150 h28 M103 150 h28 M141 150 h28 M179 150 h28"/>
+  <!-- shield with alert -->
+  <path d="M300 45 L345 62 L345 110 Q345 150 300 168 Q255 150 255 110 L255 62 Z"/>
+  <path d="M300 78 L300 115"/>
+  <circle cx="300" cy="135" r="2.5" fill="#f5f5f5"/>
+  <!-- anomaly scatter: normal dots + one outlier ringed -->
+  <circle cx="120" cy="30" r="3" fill="#f5f5f5" stroke="none" opacity="0.6"/>
+  <circle cx="150" cy="22" r="3" fill="#f5f5f5" stroke="none" opacity="0.6"/>
+  <circle cx="175" cy="34" r="3" fill="#f5f5f5" stroke="none" opacity="0.6"/>
+  <circle cx="205" cy="26" r="3" fill="#f5f5f5" stroke="none" opacity="0.6"/>
+  <circle cx="232" cy="20" r="5" fill="#f5f5f5" stroke="none"/>
+  <circle cx="232" cy="20" r="12" stroke-dasharray="4 4"/>
+  <!-- connection line card->shield -->
+  <path d="M235 118 Q245 112 255 106" stroke-dasharray="4 6" opacity="0.7"/>
+</svg>
