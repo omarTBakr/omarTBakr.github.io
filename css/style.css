@@ -147,7 +147,7 @@ a:hover { text-decoration: underline; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* Portrait with an offset frame behind it */
-.portrait-frame { position: relative; width: 190px; }
+.portrait-frame { position: relative; width: 260px; }  /* desktop size */
 .portrait-frame::after {
   content: "";
   position: absolute;
@@ -464,6 +464,7 @@ a:hover { text-decoration: underline; }
   }
   .nav-links.open { display: flex; }
 
+  .portrait-frame { width: 190px; }   /* phone size */
   .stat { border-right: none; border-bottom: 1px solid var(--line); }
   .stat:last-child { border-bottom: none; }
   .section { padding: 3.5rem 0; }
