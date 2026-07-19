@@ -464,7 +464,6 @@ a:hover { text-decoration: underline; }
   }
   .nav-links.open { display: flex; }
 
-  .portrait-frame { width: 160px; }
   .stat { border-right: none; border-bottom: 1px solid var(--line); }
   .stat:last-child { border-bottom: none; }
   .section { padding: 3.5rem 0; }
