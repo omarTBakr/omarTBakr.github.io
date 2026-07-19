@@ -300,6 +300,7 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  cursor: pointer;               /* the whole card opens the GitHub page */
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .project-card:hover { transform: translateY(-6px); border-color: var(--ink); }

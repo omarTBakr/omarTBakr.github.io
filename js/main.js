@@ -80,6 +80,13 @@ for (const project of projects) {
     </div>
   `;
 
+  // The whole card is clickable and opens the project's GitHub page.
+  // (Clicks on the inner link are left alone so it isn't opened twice.)
+  card.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
+    window.open(project.github, "_blank", "noopener");
+  });
+
   grid.appendChild(card);
 }
 
