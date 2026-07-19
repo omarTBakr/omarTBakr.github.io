@@ -147,7 +147,7 @@ a:hover { text-decoration: underline; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* Portrait with an offset frame behind it */
-.portrait-frame { position: relative; width: 150px; }
+.portrait-frame { position: relative; width: 170px; }
 .portrait-frame::after {
   content: "";
   position: absolute;
