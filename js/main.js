@@ -44,7 +44,7 @@ const projects = [
       "Analysis of 700,000+ job postings using PostgreSQL, exploring market " +
       "trends for tech roles across countries.",
     tags: ["PostgreSQL", "SQL", "Data Analysis"],
-    image: "img/jobmarket.svg",
+    image: "img/jobmarket.jpg",
     github:
       "https://github.com/omarTBakr/Tech-job-market-analysis-using-PostgreSQL",
   },
