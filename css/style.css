@@ -110,14 +110,14 @@ a:hover { text-decoration: underline; }
    HERO — centered stack: text → photo → social icons → button
    ========================================================================== */
 .hero {
-  min-height: 92vh;
+  min-height: 72vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-image: radial-gradient(var(--dot) 1.5px, transparent 1.5px);
   background-size: 30px 30px;
 }
@@ -130,15 +130,15 @@ a:hover { text-decoration: underline; }
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 6.5vw, 4.2rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 3.5vw, 1.9rem);
+  font-size: clamp(1.05rem, 2.8vw, 1.5rem);
   color: var(--muted);
-  margin: 0.5rem 0 2rem;
+  margin: 0.4rem 0 1.6rem;
   min-height: 1.4em;   /* keeps layout stable while text types */
   font-weight: 500;
 }
@@ -147,7 +147,7 @@ a:hover { text-decoration: underline; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* Portrait with an offset frame behind it */
-.portrait-frame { position: relative; width: 190px; }
+.portrait-frame { position: relative; width: 150px; }
 .portrait-frame::after {
   content: "";
   position: absolute;
@@ -188,7 +188,13 @@ a:hover { text-decoration: underline; }
 .social-icons a:hover { color: var(--ink); border-color: var(--ink); transform: translateY(-3px); }
 .social-icons svg { width: 20px; height: 20px; }
 
-.hero-buttons { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+/* Compact version of the social icons for the navbar */
+.nav-social { margin-top: 0; gap: 0.4rem; }
+.nav-social a { width: 34px; height: 34px; border: none; }
+.nav-social a:hover { transform: none; }
+.nav-social svg { width: 18px; height: 18px; }
+
+.hero-buttons { margin-top: 1.8rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 
 /* ---- Buttons ---- */
 .btn {
