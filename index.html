@@ -21,29 +21,46 @@
         <button class="theme-toggle" aria-label="Switch between dark and light theme">◐</button>
         <button class="nav-toggle" aria-label="Open menu">☰</button>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ HERO: centered — text, then photo, then social links ============ -->
   <section class="hero container" id="top">
-    <p class="hero-kicker">Hi, my name is</p>
-    <h1>Omar Ayman Bakr.</h1>
+    <p class="hero-kicker">Hello, I'm</p>
+    <h1>Omar Ayman Bakr</h1>
     <!-- The rotating text is typed by js/main.js -->
     <h2 class="hero-subtitle"><span id="typewriter"></span><span class="caret">|</span></h2>
-    <p class="hero-text">
-      I build machine learning algorithms from scratch to understand them deeply —
-      from classical ML to deep learning and computer vision. Strong foundation in
-      linear algebra, probability, and statistics.
-    </p>
+
+    <div class="portrait-frame">
+      <img src="img/portrait.jpg" alt="Portrait of Omar Ayman Bakr" class="portrait">
+    </div>
+
+    <!-- Social icons: GitHub / LinkedIn / Gmail -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://github.com/omarTBakr" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/omarrbakr/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:bakro0298@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </li>
+    </ul>
+
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">See my work</a>
-      <a href="https://github.com/omarTBakr" target="_blank" rel="noopener" class="btn btn-outline">GitHub Profile</a>
     </div>
   </section>
 
@@ -70,88 +87,100 @@
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="section container" id="about">
-    <h2 class="section-title">01 / About Me</h2>
-    <div class="about-grid reveal">
-      <div class="portrait-frame">
-        <img src="img/portrait.jpg" alt="Portrait of Omar Ayman Bakr" class="portrait">
-      </div>
-      <div>
-        <p>
-          I'm a Machine Learning Engineer who believes the best way to understand an
-          algorithm is to build it yourself. My work spans classical machine learning,
-          deep learning, and computer vision — with implementations written from
-          scratch in PyTorch and NumPy.
-        </p>
-        <p>
-          Beyond modeling, I work with real data at scale: I've analyzed 700,000+ job
-          postings with PostgreSQL and engineered features for large prediction tasks.
-          I also enjoy competitive programming on LeetCode and Codeforces.
-        </p>
-        <p>
-          My core interests: <strong>deep learning</strong>, <strong>computer vision</strong>,
-          and the <strong>math that makes it all work</strong>.
-        </p>
-      </div>
+  <!-- ============ SCROLLING TECH RIBBON ============ -->
+  <!-- The list is duplicated so the loop is seamless. Edit both copies together. -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PyTorch · Computer Vision · Deep Learning · Python · C/C++ · SQL · scikit-learn · TensorFlow · OpenCV · PostgreSQL · Docker · Linear Algebra · Probability · &nbsp;</span>
+      <span>PyTorch · Computer Vision · Deep Learning · Python · C/C++ · SQL · scikit-learn · TensorFlow · OpenCV · PostgreSQL · Docker · Linear Algebra · Probability · &nbsp;</span>
     </div>
-  </section>
+  </div>
 
-  <!-- ============ PROJECTS ============ -->
+  <!-- ============ PROJECTS (first, as the main event) ============ -->
   <!-- Cards are generated by js/main.js — edit the "projects" array there. -->
   <section class="section container" id="projects">
-    <h2 class="section-title">02 / Projects</h2>
+    <h2 class="section-title">01 / Projects</h2>
     <div class="projects-grid" id="projects-grid"></div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="section container" id="skills">
-    <h2 class="section-title">03 / Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <h3>Languages</h3>
-        <ul class="tags">
-          <li>Python</li><li>C / C++</li><li>MATLAB</li><li>SQL</li>
-        </ul>
-      </div>
-      <div class="skill-group reveal">
-        <h3>ML / Deep Learning</h3>
-        <ul class="tags">
-          <li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>NumPy · Pandas</li>
-        </ul>
-      </div>
-      <div class="skill-group reveal">
-        <h3>Tools &amp; Data</h3>
-        <ul class="tags">
-          <li>PostgreSQL</li><li>Docker</li><li>Git &amp; GitHub</li><li>Jupyter</li>
-        </ul>
-      </div>
-      <div class="skill-group reveal">
-        <h3>Foundations</h3>
-        <ul class="tags">
-          <li>Linear Algebra</li><li>Probability</li><li>Statistics</li><li>Algorithms</li>
-        </ul>
-      </div>
+  <!-- ============ ABOUT ============ -->
+  <section class="section container" id="about">
+    <h2 class="section-title">02 / About Me</h2>
+    <div class="about-text reveal">
+      <p>
+        I'm a Machine Learning Engineer who believes the best way to understand an
+        algorithm is to build it yourself. My work spans classical machine learning,
+        deep learning, and computer vision — with implementations written from
+        scratch in PyTorch and NumPy.
+      </p>
+      <p>
+        Beyond modeling, I work with real data at scale: I've analyzed 700,000+ job
+        postings with PostgreSQL and engineered features for large prediction tasks.
+        I also enjoy competitive programming on LeetCode and Codeforces.
+      </p>
+      <p>
+        My core interests: <strong>deep learning</strong>, <strong>computer vision</strong>,
+        and the <strong>math that makes it all work</strong>.
+      </p>
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section class="section container contact" id="contact">
-    <h2 class="section-title">04 / Get In Touch</h2>
-    <p>
-      I'm open to opportunities and collaborations in machine learning.
-      The fastest way to reach me is by email or LinkedIn.
-    </p>
-    <a href="mailto:bakro0298@gmail.com" class="btn btn-primary">Say Hello</a>
-    <ul class="social-links">
-      <li><a href="https://github.com/omarTBakr" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/omarrbakr/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://leetcode.com/u/omar_bakr/" target="_blank" rel="noopener">LeetCode</a></li>
-      <li><a href="https://codeforces.com/profile/OMar_Bakr" target="_blank" rel="noopener">Codeforces</a></li>
+  <!-- ============ SKILLS: animated proficiency bars ============ -->
+  <!-- Each bar's width is set by style="--level: NN%". The label next to it
+       is the honest tier: Advanced / Proficient / Familiar. -->
+  <section class="section container" id="skills">
+    <h2 class="section-title">03 / Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <div class="skill" style="--level: 92%"><span class="skill-name">Python</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 72%"><span class="skill-name">C / C++</span><span class="skill-tier">Proficient</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 85%"><span class="skill-name">SQL</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 58%"><span class="skill-name">MATLAB</span><span class="skill-tier">Familiar</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Machine / Deep Learning</h3>
+        <div class="skill" style="--level: 88%"><span class="skill-name">PyTorch</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 85%"><span class="skill-name">scikit-learn</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 70%"><span class="skill-name">TensorFlow</span><span class="skill-tier">Proficient</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 90%"><span class="skill-name">NumPy · Pandas</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Computer Vision</h3>
+        <div class="skill" style="--level: 85%"><span class="skill-name">CNNs &amp; Video Models</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 75%"><span class="skill-name">OpenCV</span><span class="skill-tier">Proficient</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 80%"><span class="skill-name">Activity Recognition</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 72%"><span class="skill-name">Image Processing</span><span class="skill-tier">Proficient</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Tools &amp; Data</h3>
+        <div class="skill" style="--level: 85%"><span class="skill-name">PostgreSQL</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 70%"><span class="skill-name">Docker</span><span class="skill-tier">Proficient</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 85%"><span class="skill-name">Git &amp; GitHub</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill" style="--level: 90%"><span class="skill-name">Jupyter</span><span class="skill-tier">Advanced</span><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+
+    </div>
+
+    <!-- Foundations chips -->
+    <ul class="tags foundations reveal">
+      <li>Linear Algebra</li><li>Probability</li><li>Statistics</li><li>Algorithms &amp; Data Structures</li>
     </ul>
   </section>
 
+  <!-- ============ FOOTER with contact links ============ -->
   <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="https://github.com/omarTBakr" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/omarrbakr/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:bakro0298@gmail.com">Gmail</a></li>
+      <li><a href="https://leetcode.com/u/omar_bakr/" target="_blank" rel="noopener">LeetCode</a></li>
+      <li><a href="https://codeforces.com/profile/OMar_Bakr" target="_blank" rel="noopener">Codeforces</a></li>
+    </ul>
     <p>Built by Omar Ayman Bakr · Hosted free on GitHub Pages</p>
   </footer>
 
