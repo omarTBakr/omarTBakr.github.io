@@ -14,7 +14,15 @@ const projects = [
     description:
       "PyTorch implementation of group activity recognition on the CVPR 2016 " +
       "volleyball dataset, reproducing 8 baseline models from the paper.",
-    tags: ["PyTorch", "Computer Vision", "Deep Learning"],
+    tags: [
+      "PyTorch",
+      "Group Activity Recognition",
+      "CNN · ResNet-50",
+      "LSTM",
+      "Attention",
+      "Multi-class Classification",
+      "Transfer Learning",
+    ],
     image: "img/volleyball.jpg",
     github: "https://github.com/omarTBakr/Volleyball-Group-Activity-Recognition",
   },
@@ -23,7 +31,15 @@ const projects = [
     description:
       "Regression project predicting New York taxi trip durations with " +
       "comprehensive feature engineering and linear models.",
-    tags: ["scikit-learn", "Feature Engineering", "Regression"],
+    tags: [
+      "scikit-learn",
+      "Ridge Regression",
+      "Feature Engineering",
+      "OSRM Routing",
+      "Docker",
+      "Custom Datasets",
+      "Folium Maps",
+    ],
     image: "img/taxi.jpg",
     github:
       "https://github.com/omarTBakr/ML-Projects/tree/main/New%20York%20City%20Taxi%20Trip%20Duration",
@@ -33,7 +49,14 @@ const projects = [
     description:
       "Classification on heavily imbalanced data using focal loss, XGBoost, " +
       "LightGBM, Random Forest, AdaBoost, and logistic regression.",
-    tags: ["XGBoost", "Imbalanced Data", "Classification"],
+    tags: [
+      "PyTorch",
+      "Focal Loss",
+      "Imbalanced Data",
+      "XGBoost · LightGBM",
+      "Random Forest",
+      "Model Benchmarking",
+    ],
     image: "img/fraud.jpg",
     github:
       "https://github.com/omarTBakr/ML-Projects/tree/main/Credit%20Card%20Fraud%20Detection",
@@ -43,7 +66,14 @@ const projects = [
     description:
       "Analysis of 700,000+ job postings using PostgreSQL, exploring market " +
       "trends for tech roles across countries.",
-    tags: ["PostgreSQL", "SQL", "Data Analysis"],
+    tags: [
+      "PostgreSQL",
+      "Advanced SQL",
+      "700K+ Records",
+      "Data Analysis",
+      "pgAdmin",
+      "Market Trends",
+    ],
     image: "img/jobmarket.jpg",
     github:
       "https://github.com/omarTBakr/Tech-job-market-analysis-using-PostgreSQL",
