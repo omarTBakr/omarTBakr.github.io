@@ -10,6 +10,27 @@
 --------------------------------------------------------------------------- */
 const projects = [
   {
+    title: "NotebookLLM-minus",
+    // An optional "status" shows as a pill next to the title. Delete the line
+    // when the project is finished.
+    status: "In progress",
+    description:
+      "A NotebookLM-style document Q&A service: upload sources to a project " +
+      "and get answers grounded in them. The FastAPI + MongoDB ingestion " +
+      "pipeline is built; embeddings and vector retrieval are next.",
+    tags: [
+      "RAG",
+      "FastAPI",
+      "MongoDB · Motor",
+      "LangChain",
+      "Async Python",
+      "Docker",
+      "REST API Design",
+    ],
+    image: "img/notebookllm.svg",
+    github: "https://github.com/omarTBakr/notebookllm-minus",
+  },
+  {
     title: "Volleyball Group Activity Recognition",
     description:
       "PyTorch implementation of group activity recognition on the CVPR 2016 " +
@@ -99,7 +120,10 @@ for (const project of projects) {
            class="${isPhoto ? "photo" : ""}">
     </div>
     <div class="project-body">
-      <h3>${project.title}</h3>
+      <div class="project-heading">
+        <h3>${project.title}</h3>
+        ${project.status ? `<span class="badge">${project.status}</span>` : ""}
+      </div>
       <p>${project.description}</p>
       <ul class="tags">
         ${project.tags.map((tag) => `<li>${tag}</li>`).join("")}
