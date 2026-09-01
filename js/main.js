@@ -15,17 +15,19 @@ const projects = [
     // when the project is finished.
     status: "In progress",
     description:
-      "A NotebookLM-style document Q&A service: upload sources to a project " +
-      "and get answers grounded in them. The FastAPI + MongoDB ingestion " +
-      "pipeline is built; embeddings and vector retrieval are next.",
+      "A NotebookLM-style document Q&A service: upload sources and get answers " +
+      "grounded in them — streamed token by token and cited back to the page " +
+      "they came from, highlighted in the document itself. Eleven model " +
+      "providers and two interchangeable databases sit behind one abstraction, " +
+      "and 455 tests gate a pipeline that deploys it to a live server.",
     tags: [
       "RAG",
       "FastAPI",
-      "MongoDB · Motor",
-      "LangChain",
-      "Async Python",
-      "Docker",
-      "REST API Design",
+      "PostgreSQL · pgvector",
+      "Vector Search",
+      "SSE Streaming",
+      "CI/CD · Docker",
+      "Prometheus · Grafana",
     ],
     image: "img/notebookllm.svg",
     github: "https://github.com/omarTBakr/notebookllm-minus",
@@ -34,7 +36,8 @@ const projects = [
     title: "Volleyball Group Activity Recognition",
     description:
       "PyTorch implementation of group activity recognition on the CVPR 2016 " +
-      "volleyball dataset, reproducing 8 baseline models from the paper.",
+      "volleyball dataset: 8 baselines built as an ablation, the best reaching " +
+      "85.64% accuracy — above the paper's published 81.9%.",
     tags: [
       "PyTorch",
       "Group Activity Recognition",
