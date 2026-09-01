@@ -152,9 +152,9 @@ for (const project of projects) {
    them, forever. Edit the "roles" list to change what it says.
 --------------------------------------------------------------------------- */
 const roles = [
+  "AI / LLM Engineer",
   "Machine Learning Engineer",
   "Computer Vision Developer",
-  "Deep Learning Enthusiast",
   "Competitive Programmer",
 ];
 
